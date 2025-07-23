@@ -1,7 +1,7 @@
 <script lang="ts">
   import { m } from '$lib/i18n/messages'
   import { externalLinkProps, sanitize } from '$lib/utils/commons'
-
+  import DisplayParams from '$lib/components/DisplayParams.svelte'
   const links = (
     [
       { href: '/mentions-legales', labelKey: 'legal' },
@@ -46,6 +46,17 @@
             <a class="fr-footer__bottom-link" {...props}>{label}</a>
           </li>
         {/each}
+        <li class="fr-footer__bottom-item">
+          <button
+            aria-controls="fr-theme-modal"
+            data-fr-opened="false"
+            title="Paramètres d'affichage"
+            type="button"
+            class="fr-btn--display fr-btn"
+          >
+            Paramètres d'affichage
+          </button>
+        </li>
       </ul>
       <div class="fr-footer__bottom-copy">
         <p>
@@ -62,3 +73,5 @@
     </div>
   </div>
 </footer>
+
+<DisplayParams></DisplayParams>
