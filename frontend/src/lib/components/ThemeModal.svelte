@@ -56,15 +56,15 @@
                       >
                         <use
                           class="fr-artwork-decorative"
-                          href="/artwork/pictograms/environment/sun.svg#artwork-decorative"
+                          href="/dsfr/artwork/pictograms/environment/sun.svg#artwork-decorative"
                         ></use>
                         <use
                           class="fr-artwork-minor"
-                          href="/artwork/pictograms/environment/sun.svg#artwork-minor"
+                          href="/dsfr/artwork/pictograms/environment/sun.svg#artwork-minor"
                         ></use>
                         <use
                           class="fr-artwork-major"
-                          href="/artwork/pictograms/environment/sun.svg#artwork-major"
+                          href="/dsfr/artwork/pictograms/environment/sun.svg#artwork-major"
                         ></use>
                       </svg>
                     </div>
@@ -88,15 +88,15 @@
                       >
                         <use
                           class="fr-artwork-decorative"
-                          href="/artwork/pictograms/environment/moon.svg#artwork-decorative"
+                          href="/dsfr/artwork/pictograms/environment/moon.svg#artwork-decorative"
                         ></use>
                         <use
                           class="fr-artwork-minor"
-                          href="/artwork/pictograms/environment/moon.svg#artwork-minor"
+                          href="/dsfr/artwork/pictograms/environment/moon.svg#artwork-minor"
                         ></use>
                         <use
                           class="fr-artwork-major"
-                          href="/artwork/pictograms/environment/moon.svg#artwork-major"
+                          href="/dsfr/artwork/pictograms/environment/moon.svg#artwork-major"
                         ></use>
                       </svg>
                     </div>
@@ -123,15 +123,15 @@
                       >
                         <use
                           class="fr-artwork-decorative"
-                          href="/artwork/pictograms/system/system.svg#artwork-decorative"
+                          href="/dsfr/artwork/pictograms/system/system.svg#artwork-decorative"
                         ></use>
                         <use
                           class="fr-artwork-minor"
-                          href="/artwork/pictograms/system/system.svg#artwork-minor"
+                          href="/dsfr/artwork/pictograms/system/system.svg#artwork-minor"
                         ></use>
                         <use
                           class="fr-artwork-major"
-                          href="/artwork/pictograms/system/system.svg#artwork-major"
+                          href="/dsfr/artwork/pictograms/system/system.svg#artwork-major"
                         ></use>
                       </svg>
                     </div>
