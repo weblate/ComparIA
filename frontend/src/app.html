@@ -2,11 +2,29 @@
 <html lang="%lang%">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%sveltekit.assets%/favicon.png" />
+        <link href="/dsfr/dsfr.min.css" rel="stylesheet">
+
+    <link rel="icon" href="/favicon/favicon.png" />
+    <!-- <link rel="icon" href="%sveltekit.assets%/favicon/favicon.png" /> -->
+        <script type="module" href="/dsfr/core/core.module.min.js?client"
+        ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     %sveltekit.head%
   </head>
   <body data-sveltekit-preload-data="hover">
     <div id="app">%sveltekit.body%</div>
+    <script>
+      if (typeof window !== 'undefined') {
+        const app = document.getElementById('app');
+        const initial = app.innerHTML;
+        app.innerHTML = '';
+        
+        document.addEventListener('DOMContentLoaded', () => {
+          app.innerHTML = initial;
+        });
+      }
+    </script>
+    <script type="module" href="/dsfr/dsfr.module.min.js" ></script>
+    <script type="text/javascript" nomodule href="/dsfr/dsfr.nomodule.min.js" ></script>
   </body>
 </html>
