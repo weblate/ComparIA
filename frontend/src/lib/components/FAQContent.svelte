@@ -1,7 +1,8 @@
 <script lang="ts">
-  import { m } from '$lib/i18n/messages'
+  // import { m } from '$lib/i18n/messages'
   // import { externalLinkProps, sanitize } from '$lib/utils/commons'
-  import "@gouvfr/dsfr/dist/component/accordion/accordion.module.min.js"
+  import "@gouvfr/dsfr/dist/component/accordion/accordion.module.min.js?client"
+  export const prerender = false;
 </script>
 
 <div class="fr-tabs">
