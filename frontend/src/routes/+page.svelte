@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Footer from '$lib/components/Footer.svelte'
   import FAQContent from '$lib/components/FAQContent.svelte'
   import Newsletter from '$lib/components/Newsletter.svelte'
   import { onMount } from 'svelte'
@@ -353,8 +352,6 @@
     </div>
   </section>
 </main>
-
-<Footer></Footer>
 
 <style>
   .fr-checkbox-group input[type='checkbox'] + label:before {

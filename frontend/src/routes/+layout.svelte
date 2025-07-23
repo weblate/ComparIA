@@ -9,6 +9,7 @@
   import '../css/app.css'
   // import MobileMenu from '$lib/components/MobileMenu.svelte'
   import Menubar from '$lib/components/Menubar.svelte'
+  import Footer from '$lib/components/Footer.svelte'
 
   let { children } = $props()
   const mode = $derived(infos.mode ? modeInfos.find((mode) => mode.value === infos.mode)! : null)
@@ -177,6 +178,7 @@
 
   {@render children()}
 </main>
+<Footer></Footer>
 
 <style>
   #main-header {

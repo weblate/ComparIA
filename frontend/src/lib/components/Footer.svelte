@@ -1,7 +1,13 @@
 <script lang="ts">
   import { m } from '$lib/i18n/messages'
   import { externalLinkProps, sanitize } from '$lib/utils/commons'
-  import DisplayParams from '$lib/components/DisplayParams.svelte'
+  import ThemeModal from './ThemeModal.svelte'
+
+  export let themeModalVisible = false
+
+  function onThemeModal() {
+    themeModalVisible = !themeModalVisible
+  }
   const links = (
     [
       { href: '/mentions-legales', labelKey: 'legal' },
@@ -20,7 +26,7 @@
   })
 </script>
 
-<footer class="fr-footer fr-pb-2w" role="contentinfo" id="main-footer">
+<footer class="fr-footer fr-pb-2w" id="main-footer">
   <div class="fr-container">
     <div class="fr-footer__body">
       <div class="fr-footer__brand fr-enlarge-link">
@@ -49,10 +55,11 @@
         <li class="fr-footer__bottom-item">
           <button
             aria-controls="fr-theme-modal"
-            data-fr-opened="false"
+            data-fr-opened={themeModalVisible}
             title="Paramètres d'affichage"
             type="button"
             class="fr-btn--display fr-btn"
+            onclick={onThemeModal}
           >
             Paramètres d'affichage
           </button>
@@ -74,4 +81,4 @@
   </div>
 </footer>
 
-<DisplayParams></DisplayParams>
+<ThemeModal visible={themeModalVisible} {onThemeModal}></ThemeModal>

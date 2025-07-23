@@ -1,15 +1,32 @@
-<dialog id="fr-theme-modal" class="fr-modal" aria-labelledby="fr-theme-modal-title">
+<script lang="ts">
+  export let visible = false
+
+  export let onThemeModal
+  import { m } from '$lib/i18n/messages'
+  // import { externalLinkProps, sanitize } from '$lib/utils/commons'
+</script>
+
+<button class="hidden" data-fr-opened="false" aria-controls="fr-modal-theme"> Hidden </button>
+<dialog
+  aria-labelledby="fr-modal-title-modal-theme"
+  id="fr-modal-theme"
+  class="fr-modal"
+  data-fr-concealing-backdrop="false"
+>
   <div class="fr-container fr-container--fluid fr-container-md">
     <div class="fr-grid-row fr-grid-row--center">
-      <div class="fr-col-12 fr-col-md-6 fr-col-lg-4">
+      <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
         <div class="fr-modal__body">
           <div class="fr-modal__header">
             <button
-              aria-controls="fr-theme-modal"
-              title="Fermer"
-              type="button"
-              class="fr-btn--close fr-btn">Fermer</button
+              class="fr-btn--close fr-btn"
+              title="Fermer la fenêtre modale"
+              aria-controls="fr-modal-theme"
+              id="fr-modal-theme-close"
+              onclick={() => (visible = false)}
             >
+              {m['words.close']()}
+            </button>
           </div>
           <div class="fr-modal__content">
             <h1 id="fr-theme-modal-title" class="fr-modal__title">Paramètres d’affichage</h1>
@@ -122,6 +139,20 @@
                 </div>
               </fieldset>
             </div>
+          </div>
+        </div>
+        <div class="fr-modal__footer">
+          <div
+            class="fr-btns-group fr-btns-group--right fr-btns-group--inline-reverse fr-btns-group--inline-lg fr-btns-group--icon-left"
+          >
+            <button
+              class="fr-btn purple-btn"
+              data-fr-opened="false"
+              aria-controls="fr-modal-theme"
+              onclick={onThemeModal}
+            >
+              {m['words.send']()}
+            </button>
           </div>
         </div>
       </div>
